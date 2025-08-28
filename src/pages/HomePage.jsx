@@ -4,6 +4,8 @@ import AboutSection from '../components/homecomponents/AboutSection'
 import ProductsSection from '../components/homecomponents/ProductSection'
 import WhyChooseUs from '../components/homecomponents/WhyChooseus'
 import ContactSection from '../components/homecomponents/ContactSection'
+import StatsSection from '../components/homecomponents/StatsSection'
+import Testimonials from '../components/homecomponents/Testimonials'
 
 const HomePage = () => {
   return (
@@ -12,6 +14,8 @@ const HomePage = () => {
       <AboutSection/>
       <ProductsSection/>
       <WhyChooseUs/>
+      <StatsSection/>
+      <Testimonials/>
       <ContactSection/>
     </>
   )

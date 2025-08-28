@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X, Phone, Globe } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 import logo from "../../assets/navbar/logo.png";
 
 const links = [
@@ -23,15 +25,10 @@ export default function AmtechNavbar() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-20">
-        
         {/* Logo */}
         <div className="flex items-center">
           <NavLink to="/" className="flex items-center">
-            <img
-              src={logo}
-              alt="logo"
-              className="h-17 w-auto object-contain" 
-            />
+            <img src={logo} alt="logo" className="h-17 w-auto object-contain" />
           </NavLink>
         </div>
 
@@ -52,12 +49,13 @@ export default function AmtechNavbar() {
           >
             <Phone className="h-4 w-4" /> Call
           </a>
-          <a
-            href="#quote"
+
+          <Link
+            to="/quote"
             className="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-white bg-blue-600"
           >
             <Globe className="h-4 w-4" /> Get Quote
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -91,15 +89,18 @@ export default function AmtechNavbar() {
             <a
               href="tel:+910000000000"
               className="mt-2 flex items-center gap-2 px-3 py-2 rounded-lg border"
+              onClick={() => setOpen(false)} 
             >
               <Phone className="h-4 w-4" /> Call
             </a>
-            <a
-              href="#quote"
+
+            <Link
+              to="/quote"
               className="mt-2 flex items-center gap-2 px-3 py-2 rounded-lg bg-blue-600 text-white"
+              onClick={() => setOpen(false)} 
             >
               <Globe className="h-4 w-4" /> Get Quote
-            </a>
+            </Link>
           </div>
         </motion.div>
       )}

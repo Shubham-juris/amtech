@@ -1,13 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img from "../../assets/home/hero.jpg"
+import { Link } from "react-router-dom";
+import img from "../../assets/home/hero.jpg";
 
 export default function HeroSection() {
   return (
     <section
       className="relative h-[90vh] flex items-center justify-center text-center text-white"
       style={{
-        backgroundImage: `url(${img})`, 
+        backgroundImage: `url(${img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -28,12 +29,12 @@ export default function HeroSection() {
         <p className="text-lg md:text-2xl mb-6 max-w-2xl mx-auto drop-shadow-md">
           Global Traders & Exporters of Clothes, Waste Rugs and Recycled Fabrics
         </p>
-        <a
-          href="#products"
+        <Link
+          to="/products"
           className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-2xl shadow-lg hover:bg-blue-700 transition"
         >
           Explore Products
-        </a>
+        </Link>
       </motion.div>
     </section>
   );
