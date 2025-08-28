@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../assets/products/bgg.jpeg"
+import bg from "../../assets/products/bg.jpg"
 
 export function ExportMarkets() {
   return (
@@ -7,7 +7,7 @@ export function ExportMarkets() {
       className="relative py-24 bg-fixed bg-cover bg-center text-white"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/70"></div>
       <div className="relative max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Our Export Markets</h2>
         <p className="text-lg max-w-3xl mx-auto">
