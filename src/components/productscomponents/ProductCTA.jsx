@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../assets/products/bgg.jpeg"
+import bg from "../../assets/products/bgg.jpeg";
 
 export function ProductCTA() {
   return (
@@ -7,9 +7,14 @@ export function ProductCTA() {
       className="relative py-24 bg-fixed bg-cover bg-center text-white"
       style={{ backgroundImage: `url(${bg})` }}
     >
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70"></div>
-      <div className="relative max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">Ready to Place Your Order?</h2>
+
+      {/* Content */}
+      <div className="relative max-w-4xl mx-auto text-center px-6">
+        <h2 className="text-4xl font-bold mb-6">
+          Ready to Place Your Order?
+        </h2>
         <p className="text-lg mb-8">
           Contact us today for bulk orders, custom textile solutions, and export partnerships.
         </p>

@@ -1,5 +1,4 @@
 import React from "react";
-import AboutIntro from "../components/aboutComponents/AboutIntro";
 import MissionVision from "../components/aboutComponents/MissionVision";
 import OurJourney from "../components/aboutComponents/OurJourney";
 import Sustainability from "../components/aboutComponents/Sustainability";
@@ -10,11 +9,10 @@ const AboutPage = () => {
   return (
     <>
       <AboutHero />
-      <AboutIntro />
-      <MissionVision />
-      <OurJourney />
-      <Sustainability />
       <GlobalReach />
+      <MissionVision />
+      <Sustainability />
+      <OurJourney />
     </>
   );
 };
